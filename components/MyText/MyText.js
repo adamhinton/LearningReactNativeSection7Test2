@@ -1,14 +1,15 @@
+import React from 'react';
 import {Text, View} from 'react-native';
+import style from './styles';
 
-const MyText = (props) => { 
+const MyText = props => {
+  const {name} = props;
 
-    const {name} = props;
-
-    return (
-        <View>
-            <Text>Hello, {name}</Text>
-        </View>
-    );
+  return (
+    <View>
+      <Text style={style.text}>Hello, {name}</Text>
+    </View>
+  );
 };
 
 export default MyText;
